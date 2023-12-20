@@ -14,6 +14,7 @@ def test(tc):
 
 if __name__ == "__main__":
     n = input("enter 1 for pd-tc 2 for manual-tc ")
+    s = Solution()
     if n == "1":
         tc = [["codeleet",[4,5,6,7,0,2,1,3]],["abc",[0,1,2]]]
         test(tc)

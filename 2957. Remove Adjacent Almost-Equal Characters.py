@@ -26,3 +26,5 @@ if __name__ == "__main__":
         for _ in range(int(input())):
             word = input()
             print(f"word = {word}, output = {s.removeAlmostEqualCharacters(word)}")
+
+
