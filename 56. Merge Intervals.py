@@ -32,6 +32,7 @@ def test(arr):
     for i in arr:
         print(f"Intervals = {i}")
         print(f"Output = {s.merge(i)}")
+
 if __name__ == "__main__":
     print("enter 1 for test and 2 for run")
     x = input("")
