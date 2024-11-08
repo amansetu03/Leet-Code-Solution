@@ -64,7 +64,7 @@ class Solution:
                 message += keyMap[stack[-1]][c]*(x+1)
             else: message += keyMap[stack[-1]][c]
         return message
-
-S = Solution()
-# print(S.decipherAstroMassege(10,"7555266338"))
-print(S.decipherAstroMassege(23,"225552*22255044666555555330777777777777733555555555555"))
+if __name__ == "__main__":
+    S = Solution()
+    # print(S.decipherAstroMassege(10,"7555266338"))
+    print(S.decipherAstroMassege(23,"225552*22255044666555555330777777777777733555555555555"))

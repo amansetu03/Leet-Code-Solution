@@ -19,15 +19,27 @@ def test():
     target = 6
     print(f"nums = {nums}, target = {target} output = {s.twoSum(nums, target)}")
 
-print("enter 1 for test and 2 for run")
-x = input("")
-if x == '1':
-    test()
-else:
-    tc = int(input())
-    for _ in range(tc):
-        nums = [int(x) for x in input().split()]
-        target = int(input())
-        S = Solution()
-        output = S.twoSum(nums,target)
-        print(output)
+# print("enter 1 for test and 2 for run")
+# x = input("")
+# if x == '1':
+#     test()
+# else:
+#     tc = int(input())
+#     for _ in range(tc):
+#         nums = [int(x) for x in input().split()]
+#         target = int(input())
+#         S = Solution()
+#         output = S.twoSum(nums,target)
+#         print(output)
+
+
+def tow_sum(arr,target):
+    index_map = {}
+    for index, num in enumerate(arr):
+        complement = target - num
+        if complement in index_map:
+            return [index_map[complement], index]
+        index_map[num] = index
+nums = [2,7,11,15]
+target = 9
+print(tow_sum(nums,target))
